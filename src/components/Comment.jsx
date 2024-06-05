@@ -1,10 +1,11 @@
 import { ThumbsUp, Trash } from 'phosphor-react';
 import styles from './Comment.module.css';
+import { Avatar } from './Avatar';
 
 export function Comment() {
     return (
         <div className={styles.comment}>
-            <img src="https://media.licdn.com/dms/image/C4D03AQEU4fXv1dfp1Q/profile-displayphoto-shrink_200_200/0/1630865311729?e=1723075200&v=beta&t=a1slhDaQS6Q9XhbfenJIWmlvmIdlVRbii223Rzet2D8" />
+            <Avatar hasBorder={false} src="https://media.licdn.com/dms/image/C4D03AQEU4fXv1dfp1Q/profile-displayphoto-shrink_200_200/0/1630865311729?e=1723075200&v=beta&t=a1slhDaQS6Q9XhbfenJIWmlvmIdlVRbii223Rzet2D8" />
 
             <div className={styles.commentBox}>
                 <div className={styles.commentContent}>
@@ -15,7 +16,7 @@ export function Comment() {
                         </div>
 
                         <button title='Deletar comentário'>
-                            <Trash size={20}/>
+                            <Trash size={24}/>
                         </button>
                     </header>
                     <p>Muito bom Devon, parabéns!! 👏👏</p>
